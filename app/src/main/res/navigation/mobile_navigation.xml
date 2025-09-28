@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.isma.trabajopractico3angelorozco.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_Listar"
+            app:destination="@id/Listar" />
+        <action
+            android:id="@+id/action_nav_home_to_Cargar"
+            app:destination="@id/Cargar" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Cargar"
+        android:name="com.isma.trabajopractico3angelorozco.ui.cargar.Cargar"
+        android:label="@string/Cargar"
+        tools:layout="@layout/fragment_cargar" >
+        <action
+            android:id="@+id/action_Cargar_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/Listar"
+        android:name="com.isma.trabajopractico3angelorozco.ui.listar.Listar"
+        android:label="@string/Listar"
+        tools:layout="@layout/fragment_listar" >
+        <action
+            android:id="@+id/action_Listar_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/Salir"
+        android:name="com.isma.trabajopractico3angelorozco.ui.salir.Salir"
+        android:label="@string/Salir"
+        tools:layout="@layout/fragment_salir" />
+</navigation>
