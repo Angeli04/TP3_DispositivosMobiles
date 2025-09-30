@@ -8,18 +8,17 @@
 
     <TextView
         android:id="@+id/tvTrabajo"
-        android:layout_width="222dp"
-        android:layout_height="166dp"
-        android:layout_marginBottom="440dp"
+        android:layout_width="255dp"
+        android:layout_height="171dp"
+        android:layout_marginBottom="416dp"
         android:fontFamily="sans-serif-black"
         android:text="TextView"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        tools:text="Trabajo Practico N° 3" />
+        tools:text="Examen Parcial" />
 
     <TextView
         android:id="@+id/tvMateria"

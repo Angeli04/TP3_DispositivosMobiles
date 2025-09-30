@@ -16,6 +16,12 @@
         <action
             android:id="@+id/action_nav_home_to_Cargar"
             app:destination="@id/Cargar" />
+        <action
+            android:id="@+id/action_nav_home_to_Eliminar"
+            app:destination="@id/Eliminar" />
+        <action
+            android:id="@+id/action_nav_home_to_Salir"
+            app:destination="@id/Salir" />
     </fragment>
 
     <fragment
@@ -36,9 +42,25 @@
             android:id="@+id/action_Listar_to_nav_home"
             app:destination="@id/nav_home" />
     </fragment>
+    <fragment android:id="@+id/Eliminar"
+        android:name="com.isma.trabajopractico3angelorozco.ui.eliminar.Eliminar"
+        android:label="@string/Eliminar"
+        tools:layout="@layout/fragment_eliminar" >
+        <action
+            android:id="@+id/action_Eliminar_to_nav_home"
+            app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_Eliminar_to_detalleProducto"
+            app:destination="@id/detalleProducto" />
+    </fragment>
     <fragment
         android:id="@+id/Salir"
         android:name="com.isma.trabajopractico3angelorozco.ui.salir.Salir"
         android:label="@string/Salir"
         tools:layout="@layout/fragment_salir" />
+    <fragment
+        android:id="@+id/detalleProducto"
+        android:name="com.isma.trabajopractico3angelorozco.ui.detalle.DetalleProducto"
+        android:label="fragment_detalle_producto"
+        tools:layout="@layout/fragment_detalle_producto" />
 </navigation>

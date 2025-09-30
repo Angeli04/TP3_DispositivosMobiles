@@ -17,6 +17,10 @@
             android:icon="@drawable/iconolista"
             android:title="@string/Listar" />
         <item
+            android:id="@+id/Eliminar"
+            android:icon="@drawable/iconoborrar"
+            android:title="@string/Eliminar" />
+        <item
             android:id="@+id/Salir"
             android:icon="@drawable/iconosalir"
             android:title="@string/Salir" />
